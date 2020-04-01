@@ -1,0 +1,46 @@
+@import '../../styles/utils.scss';
+
+.navbar {
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.12), 0 3px 1px 0 rgba(20,23,28,.05)  !important;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        li {
+            &:not(:last-child) {
+                margin-left: 1.5rem;
+                @media only screen and (max-width: 600px) {
+                    margin-left: .5rem;
+                }
+            }
+            a {
+                font-size: 1.6rem;
+                color: $fontColor;
+                @media only screen and (max-width: 600px) {
+                    font-size: 1.3rem;
+                }
+            }
+            .active {
+                color: $mainColor;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .logo {
+        width: 14rem;
+        @media only screen and (max-width: 600px) {
+            width: 10rem !important;
+        }
+        @media only screen and (max-width: 360px) {
+            width: 7.5rem !important;
+        }
+    }
+}
