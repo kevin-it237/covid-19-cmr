@@ -24,7 +24,7 @@ class TownInfos extends React.Component {
     readData = () => {
         $.ajax({
             type: "GET",
-            url: "https://raw.githubusercontent.com/kevin-it237/bigwin/master/README.md",
+            url: "https://raw.githubusercontent.com/kevin-it237/covid-19-cmr/master/covid-19-cmr.csv",
             dataType: "text",
             success: (data) => {this.processData(data);},
             error: (err) => {
@@ -45,7 +45,8 @@ class TownInfos extends React.Component {
     
                 var tarr = [];
                 for (var j=0; j<headers.length; j++) {
-                    tarr.push(headers[j]+":"+data[j]);
+                    // tarr.push(headers[j]+":"+data[j]);
+                    tarr.push(data[j]);
                 }
                 lines.push(tarr);
             }
