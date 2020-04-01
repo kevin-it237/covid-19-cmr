@@ -52,7 +52,6 @@ class TownInfos extends React.Component {
             }
         }
         this.setState({townData: lines, error: "", loading: false}, () => $('#table_id').DataTable())
-        console.log(lines)
     }
 
     render() {
