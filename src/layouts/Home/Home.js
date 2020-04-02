@@ -39,9 +39,9 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </section>
-                <TownsInfos />
+                {/* <BubbleChart /> */}
                 <Chart />
-                <BubbleChart />
+                <TownsInfos />
             </Fragment>
         )
     }
