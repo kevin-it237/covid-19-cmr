@@ -64,7 +64,7 @@ var H = Highcharts,
     chart;
 
 // Add series with state admin bubbles
-Highcharts.getJSON('./cm.json', function (json) {
+Highcharts.getJSON('https://raw.githubusercontent.com/kevin-it237/covid-19-cmr/master/cm.json', function (json) {
     var data = [];
     json.forEach(function (p) {
         p.z = p.population;
