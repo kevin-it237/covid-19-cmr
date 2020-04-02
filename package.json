@@ -13,6 +13,7 @@
     "datatables.net": "^1.10.20",
     "datatables.net-dt": "^1.10.20",
     "firebase": "^7.11.0",
+    "highcharts": "^8.0.4",
     "install": "^0.13.0",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",

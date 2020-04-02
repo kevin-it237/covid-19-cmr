@@ -40,8 +40,148 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div id="container"></div>
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- Example of loading from CDNJS: -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/cm/cm-all.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/cm/cm-all.js"></script>
+
+<script>
+
+var H = Highcharts,
+    map = H.maps['countries/cm/cm-all'],
+    chart;
+
+// Add series with state admin bubbles
+Highcharts.getJSON('./cm.json', function (json) {
+    var data = [];
+    json.forEach(function (p) {
+        p.z = p.population;
+        data.push(p);
+    });
+
+    chart = Highcharts.mapChart('container', {
+        title: {
+            text: 'Highmaps lat/lng demo'
+        },
+
+        tooltip: {
+            pointFormat: '{point.admin}, {point.admin}<br>' +
+                'Lat: {point.lat}<br>' +
+                'Lon: {point.lng}<br>' +
+                'Population: {point.population}'
+        },
+
+        xAxis: {
+            crosshair: {
+                zIndex: 5,
+                dashStyle: 'dot',
+                snap: false,
+                color: 'gray'
+            }
+        },
+
+        yAxis: {
+            crosshair: {
+                zIndex: 5,
+                dashStyle: 'dot',
+                snap: false,
+                color: 'gray'
+            }
+        },
+
+        series: [{
+            name: 'Basemap',
+            mapData: map,
+            borderColor: '#606060',
+            nullColor: 'rgba(200, 200, 200, 0.2)',
+            showInLegend: false
+        }, {
+            name: 'Separators',
+            type: 'mapline',
+            data: H.geojson(map, 'mapline'),
+            color: '#101010',
+            enableMouseTracking: false,
+            showInLegend: false
+        }, {
+            type: 'mapbubble',
+            dataLabels: {
+                enabled: true,
+                format: '{point.admin}'
+            },
+            name: 'Cities',
+            data: data,
+            maxSize: '12%',
+            color: H.getOptions().colors[0]
+        }]
+    });
+});
+
+
+
+//   var data = [
+//     ['cm-es', 0],
+//     ['cm-ad', 1],
+//     ['cm-nw', 2],
+//     ['cm-no', 3],
+//     ['cm-ce', 4],
+//     ['cm-ou', 5],
+//     ['cm-en', 6],
+//     ['cm-sw', 7],
+//     ['cm-lt', 8],
+//     ['cm-su', 9]
+// ];
+
+  // Create the chart
+  // Highcharts.mapChart('container', {
+  //     chart: {
+  //         map: 'countries/cm/cm-all'
+  //     },
+
+  //     title: {
+  //         text: 'Répartition des cas par régions'
+  //     },
+
+  //     subtitle: {
+  //         text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/cm/cm-all.js">Cameroon</a>'
+  //     },
+
+  //     mapNavigation: {
+  //         enabled: true,
+  //         buttonOptions: {
+  //             verticalAlign: 'bottom'
+  //         }
+  //     },
+
+  //     colorAxis: {
+  //         min: 0
+  //     },
+
+  //     series: [{
+  //         data: data,
+  //         name: 'Random data',
+  //         states: {
+  //             hover: {
+  //                 color: '#BADA55'
+  //             }
+  //         },
+  //         dataLabels: {
+  //             enabled: true,
+  //             format: '{point.name}'
+  //         }
+  //     }]
+  // });
+</script>
 
 </html>

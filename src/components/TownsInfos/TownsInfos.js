@@ -11,10 +11,6 @@ class TownInfos extends React.Component {
         loading: true,
         error: ""
     }
-
-    constructor(props) {
-        super(props)
-    }
     
     componentDidMount() {
         this.readData()

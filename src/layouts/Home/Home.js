@@ -1,6 +1,8 @@
 import React, {Fragment} from 'react';
 import './Home.scss';
 import TownsInfos from '../../components/TownsInfos/TownsInfos'
+import Chart from '../../components/Chart/Chart'
+import BubbleChart from '../../components/BubbleChart/BubbleChart'
 
 class Home extends React.Component {
 
@@ -31,13 +33,15 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-4 mt-3  text-center">
                                 <div className="stat">
                                     <h2 className="display-3">Guérisons</h2>
-                                    <h3 className="display-3 tree">11</h3>
+                                    <h3 className="display-3 tree">10</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <TownsInfos />
+                <Chart />
+                <BubbleChart />
             </Fragment>
         )
     }
