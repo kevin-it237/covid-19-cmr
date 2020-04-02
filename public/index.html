@@ -58,12 +58,11 @@
   <script src="https://code.highcharts.com/mapdata/countries/cm/cm-all.js"></script>
 
 <script>
-
 var H = Highcharts,
     map = H.maps['countries/cm/cm-all'],
     chart;
 
-// Add series with state admin bubbles
+// Add series with state capital bubbles
 Highcharts.getJSON('https://raw.githubusercontent.com/kevin-it237/covid-19-cmr/master/cm.json', function (json) {
     var data = [];
     json.forEach(function (p) {
@@ -73,13 +72,13 @@ Highcharts.getJSON('https://raw.githubusercontent.com/kevin-it237/covid-19-cmr/m
 
     chart = Highcharts.mapChart('container', {
         title: {
-            text: 'Highmaps lat/lng demo'
+            text: 'Highmaps lat/lon demo'
         },
 
         tooltip: {
-            pointFormat: '{point.admin}, {point.admin}<br>' +
+            pointFormat: '{point.capital}, {point.parentState}<br>' +
                 'Lat: {point.lat}<br>' +
-                'Lon: {point.lng}<br>' +
+                'Lon: {point.lon}<br>' +
                 'Population: {point.population}'
         },
 
@@ -118,7 +117,7 @@ Highcharts.getJSON('https://raw.githubusercontent.com/kevin-it237/covid-19-cmr/m
             type: 'mapbubble',
             dataLabels: {
                 enabled: true,
-                format: '{point.admin}'
+                format: '{point.capital}'
             },
             name: 'Cities',
             data: data,
