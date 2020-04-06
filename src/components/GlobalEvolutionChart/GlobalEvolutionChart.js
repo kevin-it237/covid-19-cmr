@@ -1,6 +1,6 @@
 import React from 'react';
-import {BigLoader} from '../../components/Loader/Loader'
-import './Chart.scss';
+import {BigLoader} from '../Loader/Loader'
+import './GlobalEvolutionChart.scss';
 import $ from  'jquery';
 var Highcharts = require('highcharts');  
 // Load module after Highcharts is loaded
@@ -20,6 +20,13 @@ class Chart extends React.Component {
 
     displayChart = () => {
         Highcharts.chart('covid-cmr-chart', {
+            chart: {
+                type: 'spline',
+                scrollablePlotArea: {
+                    minWidth: 700,
+                    scrollPositionX: 1
+                }
+            },
             title: {
                 text: 'Evolution du COVID-19 au Cameroun'
             },
@@ -27,10 +34,10 @@ class Chart extends React.Component {
                 text: 'Progression Journalière'
             },
             xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
             },
             series: [{
-                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
                 zoneAxis: 'x',
                 lineWidth: 3,
             }]
@@ -58,7 +65,7 @@ class Chart extends React.Component {
     
         for (var i=1; i<allTextLines.length; i++) {
             var data = allTextLines[i].split(',');
-            if (data.length == headers.length) {
+            if (data.length === headers.length) {
     
                 var tarr = [];
                 for (var j=0; j<headers.length; j++) {
@@ -72,7 +79,7 @@ class Chart extends React.Component {
     }
 
     render() {
-        const {error, townData, loading} = this.state
+        const {error, loading} = this.state
         return (
             loading ? <div className="mt-5 pt-4"><BigLoader /></div>:
                 error.length ? <div className="alert alert-danger text-center">{error}</div>:

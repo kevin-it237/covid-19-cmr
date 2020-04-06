@@ -7,30 +7,55 @@ h1 {
 }
 
 .stats {
-    .stat {
-        background-color: white;
-        padding: 4rem 2rem;
-        border: solid 1px rgb(245, 241, 241);
-        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.02);
+    .statwrapper {
+        @media only screen and (max-width: 600px) {
+            display: flex !important;
+            justify-content: space-around !important;
+            flex-direction: row !important;
+        }
+        .wrappe {
+            @media only screen and (max-width: 600px) {
+                width: 31% !important;
+                padding: 0;
+            }
+        }
+        .stat {
+            background-color: white;
+            padding: 4rem 2rem;
+            border: solid 1px rgb(245, 241, 241);
+            box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.02);
+    
+            h2 {
+                font-weight: 500;
+                font-size: 2.5rem;
+                margin-bottom: 0;
+                @media only screen and (max-width: 600px) {
+                    font-size: 1.6rem !important;
+                }
+                @media only screen and (max-width: 350px) {
+                    font-size: 1.2rem !important;
+                }
+            }
+            h3 {
+                font-weight: 800;
+                margin-bottom: 0;
+                @media only screen and (max-width: 600px) {
+                    font-weight: 600 !important;
+                    font-size: 2.3rem !important;
+                    margin-top: .7rem;
+                }
+            }
+            .one {
+                color: #666;
+            }
+            .two {
+                color: $mainColor;
+            }
+            .tree {
+                font-weight: 800;
+                color: #8ACA2B;
+            }
+        }
 
-        h2 {
-            font-weight: 500;
-            font-size: 2.5rem;
-            margin-bottom: 0;
-        }
-        h3 {
-            font-weight: 800;
-            margin-bottom: 0;
-        }
-        .one {
-            color: #666;
-        }
-        .two {
-            color: $mainColor;
-        }
-        .tree {
-            font-weight: 800;
-            color: #8ACA2B;
-        }
     }
 }

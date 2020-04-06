@@ -25,14 +25,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Covid-19 Cameroun</title>
+    <title>Stistiqus Covid-19 Cameroun</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
       
     </div>
-    <div id="container"></div>
+    <!-- <div id="container"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -52,59 +52,6 @@
   <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/mapdata/countries/cm/cm-all.js"></script>
 
-<script>
-  var data = [
-    ['cm-es', 0],
-    ['cm-ad', 1],
-    ['cm-nw', 2],
-    ['cm-no', 3],
-    ['cm-ce', 4],
-    ['cm-ou', 5],
-    ['cm-en', 6],
-    ['cm-sw', 7],
-    ['cm-lt', 8],
-    ['cm-su', 9]
-];
-
-  // Create the chart
-  Highcharts.mapChart('container', {
-      chart: {
-          map: 'countries/cm/cm-all'
-      },
-
-      title: {
-          text: 'Répartition des cas par régions'
-      },
-
-      subtitle: {
-          text: ''
-      },
-
-      mapNavigation: {
-          enabled: true,
-          buttonOptions: {
-              verticalAlign: 'bottom'
-          }
-      },
-
-      colorAxis: {
-          min: 0
-      },
-
-      series: [{
-          data: data,
-          name: 'Random data',
-          states: {
-              hover: {
-                  color: '#BADA55'
-              }
-          },
-          dataLabels: {
-              enabled: true,
-              format: '{point.name}'
-          }
-      }]
-  });
-</script>
+  <!-- <script src="./cart.js"></script> -->
 
 </html>

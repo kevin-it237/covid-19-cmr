@@ -1,12 +1,12 @@
 import React from 'react';
-import {BigLoader} from '../../components/Loader/Loader'
-import './BubbleChart.scss';
+import {BigLoader} from '../Loader/Loader'
+import './DeathChart.scss';
 import $ from  'jquery';
 var Highcharts = require('highcharts');  
 // Load module after Highcharts is loaded
 require('highcharts/modules/map')(Highcharts);
 
-class BubbleChart extends React.Component {
+class DeathChart extends React.Component {
 
     state = {
         townData: [],
@@ -15,11 +15,34 @@ class BubbleChart extends React.Component {
     }
     
     componentDidMount() {
-        // this.readData()
+        this.readData()
     }
 
     displayChart = () => {
-        
+        Highcharts.chart('covid-cmr-deathchart', {
+            chart: {
+                type: 'spline',
+                scrollablePlotArea: {
+                    minWidth: 700,
+                    scrollPositionX: 1
+                }
+            },
+            title: {
+                text: 'Evolution des Décès du COVID-19 au Cameroun'
+            },
+            subtitle: {
+                text: 'Statistiques Journalière'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            series: [{
+                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                zoneAxis: 'x',
+                lineWidth: 3,
+                color: 'red'
+            }]
+        });
     }
 
     // Get csv that contain town covid-19 infos
@@ -43,7 +66,7 @@ class BubbleChart extends React.Component {
     
         for (var i=1; i<allTextLines.length; i++) {
             var data = allTextLines[i].split(',');
-            if (data.length == headers.length) {
+            if (data.length === headers.length) {
     
                 var tarr = [];
                 for (var j=0; j<headers.length; j++) {
@@ -57,14 +80,14 @@ class BubbleChart extends React.Component {
     }
 
     render() {
-        const {error, townData, loading} = this.state
+        const {error, loading} = this.state
         return (
             loading ? <div className="mt-5 pt-4"><BigLoader /></div>:
                 error.length ? <div className="alert alert-danger text-center">{error}</div>:
                     <section>
                         <div className="container chart mt-5 pt-3 mb-5">
                             <div className="row">
-                                <div id="covid-cmr-bubblechart" className="col-sm-12">
+                                <div id="covid-cmr-deathchart" className="col-sm-12">
                                     
                                 </div>
                             </div>
@@ -74,4 +97,4 @@ class BubbleChart extends React.Component {
     }
 }
 
-export default BubbleChart;
+export default DeathChart;

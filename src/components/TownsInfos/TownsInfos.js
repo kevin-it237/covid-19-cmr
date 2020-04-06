@@ -37,7 +37,7 @@ class TownInfos extends React.Component {
     
         for (var i=1; i<allTextLines.length; i++) {
             var data = allTextLines[i].split(',');
-            if (data.length == headers.length) {
+            if (data.length === headers.length) {
     
                 var tarr = [];
                 for (var j=0; j<headers.length; j++) {
