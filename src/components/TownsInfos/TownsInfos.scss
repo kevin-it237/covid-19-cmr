@@ -1,5 +1,11 @@
 .stats-table {
     margin-top: 5rem;
+
+    .tablecontainer {
+        overflow-x: scroll;
+        padding-bottom: 2rem;
+    }
+
     tr,td {
         font-size: 1.6rem !important;
 

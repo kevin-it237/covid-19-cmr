@@ -58,7 +58,7 @@ class TownInfos extends React.Component {
                     <section>
                         <div className="container stats-table">
                             <div className="row">
-                                <div className="col-sm-12">
+                                <div className="col-sm-12 tablecontainer">
                                     <table className="table" id="table_id">
                                         <thead className="thead-light">
                                             <tr>
