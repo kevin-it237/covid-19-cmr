@@ -1,6 +1,12 @@
 import React from 'react';
+import {BigLoader} from '../../components/Loader/Loader'
+import './CameroonMap.scss';
 
 export default class CameroonMap extends React.Component {
+
+    state = {
+        loading: true
+    }
 
     componentDidMount() {
         const data = `var data =[
@@ -55,13 +61,22 @@ export default class CameroonMap extends React.Component {
               }]
         });`
 
-        const s = document.createElement('script');
-        s.async = true;
-        s.innerHTML = data;
-        this.instance.appendChild(s);
+        setTimeout(() => {
+            const s = document.createElement('script');
+            s.async = true;
+            s.innerHTML = data;
+            this.instance.appendChild(s);
+        }, 2000)
+
     }
 
     render() {
-        return <div id="container" className="py-5" ref={el => (this.instance = el)} />;
+        const {loading} = this.state;
+
+        return (
+            <div id="container" className="pt-4 mt-5" ref={el => (this.instance = el)}>
+                {loading&&<div className="mt-5 pt-5 d-flex justify-content-center align-items-center"><BigLoader /></div>}
+            </div>
+        );
     }
 }

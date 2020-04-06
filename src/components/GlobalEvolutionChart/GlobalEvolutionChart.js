@@ -81,7 +81,7 @@ class Chart extends React.Component {
     render() {
         const {error, loading} = this.state
         return (
-            loading ? <div className="mt-5 pt-4"><BigLoader /></div>:
+            loading ? <div className="mt-5 pt-2"><BigLoader /></div>:
                 error.length ? <div className="alert alert-danger text-center">{error}</div>:
                     <section>
                         <div className="container chart mt-5 pt-3 mb-5">
