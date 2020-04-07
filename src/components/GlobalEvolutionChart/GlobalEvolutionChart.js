@@ -28,18 +28,25 @@ class Chart extends React.Component {
                 }
             },
             title: {
-                text: 'Evolution du COVID-19 au Cameroun'
+                text: 'Evolution des cas de COVID-19 au Cameroun'
             },
             subtitle: {
-                text: 'Progression Journalière'
+                text: 'Nombre de personnes infectées'
             },
             xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                categories: ["Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09","Mar 10","Mar 11","Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27","Mar 28","Mar 29","Mar 30","Mar 31","Apr 01","Apr 02","Apr 03","Apr 04","Apr 05","Apr 06"] 
+            },
+            yAxis: {
+                title: {
+                    text: 'Total des Cas'
+                }
             },
             series: [{
-                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                name: 'Cas',
+                data: [0,0,0,0,0,2,2,2,2,2,2,2,2,3,4,5,10,13,13,27,40,40,56,66,75,75,91,91,139,139,193,233,306,509,555,650,658],
                 zoneAxis: 'x',
-                lineWidth: 3,
+                color: '#33CCFF',
+                lineWidth: 5,
             }]
         });
     }

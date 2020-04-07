@@ -23,19 +23,19 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-4 mt-3 text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
-                                    <h3 className="display-3 one">233</h3>
+                                    <h3 className="display-3 one">658</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-4 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Décès</h2>
-                                    <h3 className="display-3 two">6</h3>
+                                    <h3 className="display-3 two">9</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-4 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
-                                    <h3 className="display-3 tree">10</h3>
+                                    <h3 className="display-3 tree">17</h3>
                                 </div>
                             </div>
                         </div>

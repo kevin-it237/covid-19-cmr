@@ -31,16 +31,22 @@ class DeathChart extends React.Component {
                 text: 'Evolution des Décès du COVID-19 au Cameroun'
             },
             subtitle: {
-                text: 'Statistiques Journalière'
+                text: 'Nombre de Décès'
             },
             xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                categories: ["Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09","Mar 10","Mar 11","Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27","Mar 28","Mar 29","Mar 30","Mar 31","Apr 01","Apr 02","Apr 03","Apr 04","Apr 05","Apr 06"]
+            },
+            yAxis: {
+                title: {
+                    text: 'Total des Décès'
+                }
             },
             series: [{
-                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,6,6,6,6,7,8,9,9,9],
                 zoneAxis: 'x',
-                lineWidth: 3,
-                color: 'red'
+                lineWidth: 5,
+                name: 'Décès',
+                color: 'red',
             }]
         });
     }
