@@ -11,15 +11,15 @@ export default class CameroonMap extends React.Component {
     componentDidMount() {
         const data = `var data =[
             ['cm-es', 0],
-            ['cm-ad', 1],
+            ['cm-ad', 0],
             ['cm-nw', 2],
-            ['cm-no', 3],
-            ['cm-ce', 4],
-            ['cm-ou', 5],
-            ['cm-en', 6],
-            ['cm-sw', 7],
-            ['cm-lt', 8],
-            ['cm-su', 9]
+            ['cm-no', 0],
+            ['cm-ce', 350],
+            ['cm-ou', 10],
+            ['cm-en', 0],
+            ['cm-sw', 17],
+            ['cm-lt', 250],
+            ['cm-su', 20]
         ];
         
         Highcharts.mapChart('container', {
@@ -48,10 +48,10 @@ export default class CameroonMap extends React.Component {
         
               series: [{
                   data: data,
-                  name: 'Random data',
+                  name: 'Cas',
                   states: {
                       hover: {
-                          color: '#BADA55'
+                          color: '#33CCFF'
                       }
                   },
                   dataLabels: {
