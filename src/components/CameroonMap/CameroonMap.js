@@ -14,11 +14,11 @@ export default class CameroonMap extends React.Component {
             ['cm-ad', 0],
             ['cm-nw', 2],
             ['cm-no', 0],
-            ['cm-ce', 350],
+            ['cm-ce', 352],
             ['cm-ou', 10],
             ['cm-en', 0],
             ['cm-sw', 17],
-            ['cm-lt', 250],
+            ['cm-lt', 227],
             ['cm-su', 20]
         ];
         
