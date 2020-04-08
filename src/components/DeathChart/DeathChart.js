@@ -21,11 +21,7 @@ class DeathChart extends React.Component {
     displayChart = () => {
         Highcharts.chart('covid-cmr-deathchart', {
             chart: {
-                type: 'spline',
-                scrollablePlotArea: {
-                    minWidth: 700,
-                    scrollPositionX: 1
-                }
+                type: 'line'
             },
             title: {
                 text: 'Evolution des Décès du COVID-19 au Cameroun'
@@ -41,13 +37,30 @@ class DeathChart extends React.Component {
                     text: 'Total des Décès'
                 }
             },
+            credits: {
+                enabled: false
+            },
             series: [{
                 data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,6,6,6,6,7,8,9,9,9,9],
                 zoneAxis: 'x',
                 lineWidth: 5,
                 name: 'Décès',
                 color: 'red',
-            }]
+            }],
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 800
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
+                        }
+                    }
+                }]
+            }
         });
     }
 

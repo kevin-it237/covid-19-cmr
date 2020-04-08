@@ -21,11 +21,7 @@ class Chart extends React.Component {
     displayChart = () => {
         Highcharts.chart('covid-cmr-chart', {
             chart: {
-                type: 'spline',
-                scrollablePlotArea: {
-                    minWidth: 700,
-                    scrollPositionX: 1
-                }
+                type: 'line'
             },
             title: {
                 text: 'Evolution des cas de COVID-19 au Cameroun'
