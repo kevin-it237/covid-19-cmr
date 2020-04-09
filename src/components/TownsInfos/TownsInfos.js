@@ -62,11 +62,10 @@ class TownInfos extends React.Component {
                                     <table className="table" id="table_id">
                                         <thead className="thead-light">
                                             <tr>
-                                            <th scope="col">Ville</th>
+                                            <th scope="col">Région</th>
                                             <th scope="col">Cas Total</th>
-                                            <th scope="col">Nouveaux Cas</th>
                                             <th scope="col">Guéris</th>
-                                            <th scope="col">Décès</th>
+                                            <th scope="col">Actifs</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -75,9 +74,8 @@ class TownInfos extends React.Component {
                                                     <tr key={i}>
                                                         <th scope="row">{info[0]}</th>
                                                         <td>{info[1]}</td>
-                                                        <td>+{info[2]}</td>
+                                                        <td>{info[2]}</td>
                                                         <td>{info[3]}</td>
-                                                        <td>{info[4]}</td>
                                                     </tr>
                                                 ))
                                             }

@@ -49,7 +49,7 @@ class Home extends React.Component {
                 <DalyCases />
                 <ActiveCasesChart />
                 <DeathChart />
-                {/* <TownsInfos /> */}
+                <TownsInfos />
                 <Footer />
             </Fragment>
         )
