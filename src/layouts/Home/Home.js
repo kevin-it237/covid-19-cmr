@@ -26,7 +26,7 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-4 mt-3 text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
-                                    <h3 className="display-3 one">730</h3>
+                                    <h3 className="display-3 one">751</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-4 mt-3  text-center wrappe">
