@@ -3,8 +3,11 @@ import './Home.scss';
 import TownsInfos from '../../components/TownsInfos/TownsInfos'
 import GlobalEvolutionChart from '../../components/GlobalEvolutionChart/GlobalEvolutionChart'
 import DeathChart from '../../components/DeathChart/DeathChart';
-import Footer from '../../components/Footer/Footer';
+import ActiveCasesChart from '../../components/ActiveCasesChart/ActiveCasesChart';
+import DalyCases from '../../components/DalyNewCases/DalyNewCases';
 import CameroonMap from './../../components/CameroonMap/CameroonMap'
+
+import Footer from '../../components/Footer/Footer';
 
 class Home extends React.Component {
 
@@ -23,13 +26,13 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-4 mt-3 text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
-                                    <h3 className="display-3 one">685</h3>
+                                    <h3 className="display-3 one">730</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-4 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Décès</h2>
-                                    <h3 className="display-3 two">9</h3>
+                                    <h3 className="display-3 two">10</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-4 mt-3  text-center wrappe">
@@ -43,8 +46,10 @@ class Home extends React.Component {
                 </section>
                 <CameroonMap />
                 <GlobalEvolutionChart />
+                <DalyCases />
+                <ActiveCasesChart />
                 <DeathChart />
-                <TownsInfos />
+                {/* <TownsInfos /> */}
                 <Footer />
             </Fragment>
         )
