@@ -14,7 +14,7 @@ class Recommandations extends React.Component {
                <div className="container py-4 recommadations">
                     <div className="row py-5">
                         <div className="col-sm-12">
-                            <h1 className="mb-4 text-bold text-dark">Nouvelles recommadations du gouvernement</h1>
+                            <h1 className="mb-4 text-bold text-dark">Nouvelles recommandations du gouvernement</h1>
                             <p className="desc">Les 7 mesures supplémentaires contre la propagation du COVID-19 au Cameroun.</p>
                         </div>
                         <div className="col-sm-12">
