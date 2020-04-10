@@ -23,19 +23,26 @@ class Home extends React.Component {
                 <section>
                     <div className="container mt-4 stats">
                         <div className="row mt-5 justify-content-center align-items-center statwrapper">
-                            <div className="col-sm-10 col-md-4 mt-3 text-center wrappe">
+                            <div className="col-sm-10 col-md-3 mt-3 text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
                                     <h3 className="display-3 one">803</h3>
                                 </div>
                             </div>
-                            <div className="col-sm-10 col-md-4 mt-3  text-center wrappe">
+                            <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
+                                <div className="stat">
+                                    <h2 className="display-3">Nouveaux Cas</h2>
+                                    <h3 className="display-3 four">73</h3>
+                                    <p className="text-muted">Mise à jour le <strong>09 Mars 2020</strong></p>
+                                </div>
+                            </div>
+                            <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Décès</h2>
                                     <h3 className="display-3 two">12</h3>
                                 </div>
                             </div>
-                            <div className="col-sm-10 col-md-4 mt-3  text-center wrappe">
+                            <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
                                     <h3 className="display-3 tree">61</h3>

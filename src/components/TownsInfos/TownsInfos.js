@@ -62,7 +62,7 @@ class TownInfos extends React.Component {
                                     <table className="table" id="table_id">
                                         <thead className="thead-light">
                                             <tr>
-                                            <th scope="col">Région</th>
+                                            <th scope="col">Villes</th>
                                             <th scope="col">Cas Total</th>
                                             <th scope="col">Guéris</th>
                                             <th scope="col">Actifs</th>
