@@ -26,14 +26,14 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-3 mt-3 text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
-                                    <h3 className="display-3 one">803</h3>
+                                    <h3 className="display-3 one">820</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Nouveaux Cas</h2>
-                                    <h3 className="display-3 four">73</h3>
-                                    <p className="text-muted">Mise à jour le <strong>09 Mars 2020</strong></p>
+                                    <h3 className="display-3 four">17</h3>
+                                    <p className="text-muted">Mise à jour le <strong>10 Avril 2020</strong></p>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
@@ -45,7 +45,7 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
-                                    <h3 className="display-3 tree">61</h3>
+                                    <h3 className="display-3 tree">98</h3>
                                 </div>
                             </div>
                         </div>
