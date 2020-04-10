@@ -1,0 +1,49 @@
+.recommadations {
+    h1 {
+        font-weight: bold;
+        font-weight: 900;
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+            font-size: 2.1rem;
+        }
+    }
+    .desc {
+        font-size: 1.6rem;
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    .card {
+        box-shadow: 0 8px 10px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 0 !important;
+        border: solid 1px #ededed !important;
+
+        h5 {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: white;
+            padding: 1rem 1.5rem;
+            color: #eb4559;
+            border-radius: 0 !important;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .card-body {
+            border-radius: 0 !important;
+            border: none !important;
+            padding: 2rem 1.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            @media only screen and (max-width: 600px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

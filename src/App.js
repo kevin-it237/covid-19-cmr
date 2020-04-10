@@ -11,6 +11,7 @@ import {
 const Home = lazy(() => import('./layouts/Home/Home'))
 const Admin = lazy(() => import('./layouts/Admin/Admin'))
 const Header = lazy(() => import('./components/Header/Header'))
+const Recommandations = lazy(() => import('./components/Recommandations/Recommandations'))
 const About = lazy(() => import('./layouts/About/About'))
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route exact path="/admin">
               <Admin />
+            </Route>
+            <Route exact path="/recommandations">
+              <Recommandations />
             </Route>
             <Route exact path="/about">
               <About />

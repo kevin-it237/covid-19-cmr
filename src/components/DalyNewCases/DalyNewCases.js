@@ -30,8 +30,7 @@ class DalyNewCases extends React.Component {
                 text: 'Nombre de malades par jour'
             },
             xAxis: {
-                categories: ["Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09","Mar 10","Mar 11","Mar 12","Mar 13",
-                "Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27",
+                categories: ["Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27",
                 "Mar 28","Mar 29","Mar 30","Mar 31","Apr 01","Apr 02","Apr 03","Apr 04","Apr 05","Apr 06","Apr 07","Apr 08","Apr 09"]  
             },
             yAxis: {
@@ -41,7 +40,7 @@ class DalyNewCases extends React.Component {
             },
             series: [{
                 name: 'Cas',
-                data: [null,null,null,null,null,null,0,0,0,0,0,0,0,1,1,1,5,3,0,14,13,0,16,10,9,0,16,0,48,0,54,40,73,203,46,95,8,27,45,73],
+                data: [0,1,1,1,5,3,0,14,13,0,16,10,9,0,16,0,48,0,54,40,73,203,46,95,8,27,45,73],
                 zoneAxis: 'x',
                 color: '#FF9900',
                 lineWidth: 5,

@@ -15,6 +15,9 @@ class Header extends React.Component {
                             <NavLink to="/home" className="nav-link">Accueil <span className="sr-only">(current)</span></NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink to="/recommandations" className="nav-link">Recommandations</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink to="/about" className="nav-link">A propos</NavLink>
                         </li>
                     </ul>
