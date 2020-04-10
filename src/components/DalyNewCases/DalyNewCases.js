@@ -41,7 +41,7 @@ class DalyNewCases extends React.Component {
             },
             series: [{
                 name: 'Cas',
-                data: [null,null,null,null,null,null,0,0,0,0,0,0,0,1,1,1,5,3,0,14,13,0,16,10,9,0,16,0,48,0,54,40,73,203,46,95,8,27,45,21],
+                data: [null,null,null,null,null,null,0,0,0,0,0,0,0,1,1,1,5,3,0,14,13,0,16,10,9,0,16,0,48,0,54,40,73,203,46,95,8,27,45,73],
                 zoneAxis: 'x',
                 color: '#FF9900',
                 lineWidth: 5,
