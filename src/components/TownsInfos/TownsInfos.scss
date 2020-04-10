@@ -1,9 +1,23 @@
 .stats-table {
     margin-top: 5rem;
 
+    h5 {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
     .tablecontainer {
         overflow-x: scroll;
         padding-bottom: 2rem;
+    }
+
+    .nav-tabs {
+        a {
+            font-size: 1.6rem !important;
+        }
+        #profile-tab {
+            color: 444 !important;
+        }
     }
 
     tr,td {
