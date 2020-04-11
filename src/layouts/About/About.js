@@ -25,9 +25,9 @@ class About extends React.Component {
                             <div className="mt-5">
                                 <h2 className="text-bold">Nous contacter</h2>
                                 <h4 className="mt-5"><strong>Téléphone:</strong></h4>
-                                <p>(+237) 655-891-562</p>
                                 <p>(+237) 696-263-641</p>
                                 <p>(+237) 676-532-558</p>
+                                <p>(+237) 655-891-562</p>
                                 <h4 className="mt-5"><strong>Email:</strong></h4>
                                 <p>contact@inchtechs.com</p>
                                 <p>ngaleu.kevin@inchtechs.com</p>

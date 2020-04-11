@@ -10,9 +10,10 @@ import {
 
 const Home = lazy(() => import('./layouts/Home/Home'))
 const Admin = lazy(() => import('./layouts/Admin/Admin'))
-const Header = lazy(() => import('./components/Header/Header'))
-const Recommandations = lazy(() => import('./components/Recommandations/Recommandations'))
+const Recommandations = lazy(() => import('./layouts/Recommandations/Recommandations'))
+const Conseils = lazy(() => import('./layouts/Conseils/Conseils'))
 const About = lazy(() => import('./layouts/About/About'))
+const Header = lazy(() => import('./components/Header/Header'))
 
 function App() {
   return (
@@ -32,8 +33,11 @@ function App() {
             <Route exact path="/admin">
               <Admin />
             </Route>
-            <Route exact path="/recommandations">
+            <Route exact path="/mesures">
               <Recommandations />
+            </Route>
+            <Route exact path="/conseils">
+              <Conseils />
             </Route>
             <Route exact path="/about">
               <About />

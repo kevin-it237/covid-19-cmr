@@ -1,0 +1,140 @@
+.conseils {
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-self: start;
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+
+        .nav {
+            width: 21%;
+            border: solid 1px #ededed;
+            background-color: white;
+            align-self: start;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                font-size: 1.6rem;
+                color: #222;
+                text-transform: uppercase;
+                padding: 1rem 1.5rem;
+            }
+            .active {
+                background-color: #eb4559;
+                font-weight: 600;
+                color: white;
+            }
+        }
+
+        .tab-content {
+            width: 76%;
+            border: solid 1px #ededed;
+            background-color: white;
+            padding: 5rem 4rem;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                padding: 2rem;
+            }
+
+            h2 {
+                font-weight: 900;
+            }
+
+            img {
+                width: 12rem;
+                margin-bottom: 2rem;
+                @media only screen and (max-width: 600px) {
+                    width: 8rem;
+                }
+            }
+
+            .symptomes {
+                p {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 1.4rem;
+                    }
+                }
+                .card {
+                    margin-top: 1rem;
+                    p {
+                        font-size: 1.6rem;
+                        @media only screen and (max-width: 600px) {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .card-title {
+                        font-size: 2rem;
+                        margin-bottom: 0;
+                        align-items: center;
+                        @media only screen and (max-width: 600px) {
+                            font-size: 1.6rem;
+                        }
+                    }
+    
+                    span {
+                        display: inline-block;
+                        height: 2rem;
+                        width: 2rem;
+                        background-color: #eb4559;
+                        margin-right: 1.5rem;
+                        border-radius: 50%;
+                        @media only screen and (max-width: 600px) {
+                            height: 1.5rem;
+                            width: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .mesures {
+                margin-top: 1.5rem;
+
+                .card {
+                    margin-top: 1rem;
+                    .card-body {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .card-title {
+                        font-size: 2.1rem;
+                        font-weight: 800;
+                        margin-bottom: 0;
+                        color: white;
+                        background-color: #eb4559;
+                        width: 4rem;
+                        height: 4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100%;
+                        margin-right: 1rem;
+                        @media only screen and (max-width: 600px) {
+                            font-size: 1.5rem;
+                            height: 2.5rem;
+                            width: 2.5rem;
+                        }
+                        
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        @media only screen and (max-width: 600px) {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            #gestes {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+}

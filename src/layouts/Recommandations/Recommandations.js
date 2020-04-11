@@ -222,10 +222,14 @@ class Recommandations extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-sm-12">
-                                            <h4 className="mt-4">
-                                            Il s’agit des mesures certes difficiles mais nécessaires pour garantir la protection de tous et de chacun et limiter la propagation de cette pandémie. En cas de nécessité, les populations sont invitées à appeler le numéro vert <strong>1510</strong> mis en place pour la mobilisation des équipes de secours.
-                                            </h4>
+                                        <div className="col-sm-12 mt-4">
+                                            <div class="card bg-dark mb-3 mt-4">
+                                                <div class="card-body">
+                                                    <p class="card-text text-white">
+                                                    Il s’agit des mesures certes difficiles mais nécessaires pour garantir la protection de tous et de chacun et limiter la propagation de cette pandémie. En cas de nécessité, les populations sont invitées à appeler le numéro vert <strong className="text-white">1510</strong> mis en place pour la mobilisation des équipes de secours.
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
