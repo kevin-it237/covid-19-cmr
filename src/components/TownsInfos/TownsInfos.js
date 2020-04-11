@@ -32,15 +32,15 @@ class TownInfos extends React.Component {
             }
          });
         // Get africa data
-        $.ajax({
-            type: "GET",
-            url: "https://raw.githubusercontent.com/kevin-it237/covid-19-cmr/master/covid-19-africa.csv",
-            dataType: "text",
-            success: (data) => {this.processData(data, 'Africa');},
-            error: (err) => {
-                this.setState({loadingCountryData: false, error2: "Veuillez Recharger la page"})
-            }
-         });
+        // $.ajax({
+        //     type: "GET",
+        //     url: "https://raw.githubusercontent.com/kevin-it237/covid-19-cmr/master/covid-19-africa.csv",
+        //     dataType: "text",
+        //     success: (data) => {this.processData(data, 'Africa');},
+        //     error: (err) => {
+        //         this.setState({loadingCountryData: false, error2: "Veuillez Recharger la page"})
+        //     }
+        //  });
     }
 
     // Parse cv fetched
@@ -83,10 +83,10 @@ class TownInfos extends React.Component {
                                         <li className="nav-item">
                                             <a className="nav-link active" id="cameroon-tab" data-toggle="tab" href="#cameroon" role="tab" aria-controls="cameroon" aria-selected="true">Cameroun</a>
                                         </li>
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <a className="nav-link" id="africa-tab" data-toggle="tab" href="#africa" role="tab" aria-controls="africa" aria-selected="false">Afrique</a>
-                                        </li>
-                                        </ul>
+                                        </li> */}
+                                    </ul>
                                     <div className="tab-content" id="myTabContent">
                                         <div className="tab-pane fade show active" id="cameroon" role="tabpanel" aria-labelledby="cameroon-tab">
                                             <table className="table" id="table_id">
@@ -113,11 +113,11 @@ class TownInfos extends React.Component {
                                             </table>
 
                                         </div>
-                                        <div className="tab-pane fade" id="africa" role="tabpanel" aria-labelledby="africa-tab">
+                                        {/* <div className="tab-pane fade" id="africa" role="tabpanel" aria-labelledby="africa-tab">
                                             {
                                                 !loadingCountryData&&countryData&&<AfricaData countryData={countryData} />
                                             }
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
