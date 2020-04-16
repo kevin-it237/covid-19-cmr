@@ -32,20 +32,20 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Nouveaux Cas</h2>
-                                    <h3 className="display-3 four">16</h3>
-                                    <p className="text-muted">Mise à jour le <strong>14 Avril 2020</strong></p>
+                                    <h3 className="display-3 four">-</h3>
+                                    <p className="text-muted">Mise à jour le <strong>15 Avril 2020</strong></p>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Décès</h2>
-                                    <h3 className="display-3 two">14</h3>
+                                    <h3 className="display-3 two">17</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
-                                    <h3 className="display-3 tree">130</h3>
+                                    <h3 className="display-3 tree">165</h3>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 {
   "name": "survey-cmr",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "http://covid19.inchtechs.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
