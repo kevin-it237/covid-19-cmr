@@ -11,15 +11,15 @@ export default class CameroonMap extends React.Component {
     componentDidMount() {
         const data = `var data =[
             ['cm-es', 2],
-            ['cm-ad', 0],
+            ['cm-ad', 1],
             ['cm-nw', 1],
             ['cm-no', 0],
-            ['cm-ce', 621],
-            ['cm-ou', 51],
+            ['cm-ce', 558],
+            ['cm-ou', 60],
             ['cm-en', 0],
-            ['cm-sw', 5],
-            ['cm-lt', 311],
-            ['cm-su', 5]
+            ['cm-sw', 11],
+            ['cm-lt', 381],
+            ['cm-su', 4]
         ];
         
         Highcharts.mapChart('container', {

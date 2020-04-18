@@ -26,14 +26,14 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-3 mt-3 text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
-                                    <h3 className="display-3 one">996</h3>
+                                    <h3 className="display-3 one">1017</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Nouveaux Cas</h2>
-                                    <h3 className="display-3 four">148</h3>
-                                    <p className="text-muted">Mise à jour le <strong>16 Avril 2020</strong></p>
+                                    <h3 className="display-3 four">21</h3>
+                                    <p className="text-muted">Mise à jour le <strong>17 Avril 2020</strong></p>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
@@ -45,7 +45,7 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
-                                    <h3 className="display-3 tree">164</h3>
+                                    <h3 className="display-3 tree">177</h3>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ class Home extends React.Component {
                 <DalyCases />
                 <ActiveCasesChart />
                 <DeathChart />
-                <TownsInfos />
+                {/* <TownsInfos /> */}
                 <Footer />
             </Fragment>
         )
