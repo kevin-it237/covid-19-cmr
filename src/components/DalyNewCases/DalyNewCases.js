@@ -32,7 +32,7 @@ class DalyNewCases extends React.Component {
             xAxis: {
                 categories: ["Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27",
                 "Mar 28","Mar 29","Mar 30","Mar 31","Apr 01","Apr 02","Apr 03","Apr 04","Apr 05","Apr 06",
-                "Apr 07","Apr 08","Apr 09","Apr 10","Apr 11","Apr 12","Apr 13","Apr 14","Apr 15","Apr 16","Apr 17"]  
+                "Apr 07","Apr 08","Apr 09","Apr 10","Apr 11","Apr 12","Apr 13","Apr 14","Apr 15","Apr 16","Apr 17","Apr 18","Apr 19","Apr 20"]  
             },
             yAxis: {
                 title: {
@@ -41,7 +41,7 @@ class DalyNewCases extends React.Component {
             },
             series: [{
                 name: 'Cas',
-                data: [0,1,1,1,5,3,0,14,13,0,16,10,9,0,16,0,48,0,54,40,73,203,46,95,8,27,45,73,17,0,12,0,16,0,148,21],
+                data: [0,1,1,1,5,3,0,14,13,0,16,10,9,0,16,0,48,0,54,40,73,203,46,95,8,27,45,73,17,0,12,0,16,0,148,21,0,0,146],
                 zoneAxis: 'x',
                 color: '#FF9900',
                 lineWidth: 5,
