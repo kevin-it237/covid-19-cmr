@@ -32,8 +32,8 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Nouveaux Cas</h2>
-                                    <h3 className="display-3 four">146</h3>
-                                    <p className="text-muted">Mise à jour le <strong>20 Avril 2020</strong></p>
+                                    <h3 className="display-3 four">147</h3>
+                                    <p className="text-muted">Mise à jour le <strong>21 Avril 2020</strong></p>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
