@@ -26,26 +26,26 @@ class Home extends React.Component {
                             <div className="col-sm-10 col-md-3 mt-3 text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
-                                    <h3 className="display-3 one">1017</h3>
+                                    <h3 className="display-3 one">1163</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Nouveaux Cas</h2>
-                                    <h3 className="display-3 four">21</h3>
-                                    <p className="text-muted">Mise à jour le <strong>17 Avril 2020</strong></p>
+                                    <h3 className="display-3 four">147</h3>
+                                    <p className="text-muted">Mise à jour le <strong>21 Avril 2020</strong></p>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Décès</h2>
-                                    <h3 className="display-3 two">22</h3>
+                                    <h3 className="display-3 two">42</h3>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
-                                    <h3 className="display-3 tree">177</h3>
+                                    <h3 className="display-3 tree">396</h3>
                                 </div>
                             </div>
                         </div>
