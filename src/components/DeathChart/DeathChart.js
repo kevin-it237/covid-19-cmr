@@ -9,7 +9,7 @@ class DeathChart extends React.Component {
 
     state = {
         loading: true,
-        error: ""
+        error: "" 
     }
     
     componentDidMount() {
