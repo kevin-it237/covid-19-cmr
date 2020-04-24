@@ -31,6 +31,7 @@ class About extends React.Component {
                                 <h4 className="mt-5"><strong>Email:</strong></h4>
                                 <p>contact@inchtechs.com</p>
                                 <p>ngaleu.kevin@inchtechs.com</p>
+                                <p>ndunglajoel@inchtechs.com</p>
                                 <h4 className="mt-5"><strong>Adresse:</strong></h4>
                                 <p>Yaoundé,  Chapelle Nsimeyong</p>
                             </div>
