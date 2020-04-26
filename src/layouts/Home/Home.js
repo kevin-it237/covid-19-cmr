@@ -39,6 +39,7 @@ class Home extends React.Component {
                                         <CountUp end={88} />
                                     </h3>
                                     <p className="text-muted">Mise à jour le <strong>25 Avril 2020</strong></p>
+                                    <p className="text-muted">Sources: <strong>MINSANTE & OMS</strong></p>
                                 </div>
                             </div>
                             <div className="col-sm-10 col-md-3 mt-3  text-center wrappe">
