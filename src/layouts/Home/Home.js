@@ -28,7 +28,7 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
                                     <h3 className="display-3 one">
-                                        <CountUp end={1621} />
+                                        <CountUp end={1705} />
                                     </h3>
                                 </div>
                             </div>
@@ -36,9 +36,9 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Nouveaux Cas</h2>
                                     <h3 className="display-3 four">
-                                        <CountUp end={103} />
+                                        <CountUp end={84} />
                                     </h3>
-                                    <p className="text-muted">Mise à jour le <strong>26 Avril 2020</strong></p>
+                                    <p className="text-muted">Mise à jour le <strong>28 Avril 2020</strong></p>
                                     <p className="text-muted">Sources: <strong>MINSANTE & OMS</strong></p>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Décès</h2>
                                     <h3 className="display-3 two">
-                                        <CountUp end={56} />
+                                        <CountUp end={58} />
                                     </h3>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
                                     <h3 className="display-3 tree">
-                                        <CountUp end={786} />
+                                        <CountUp end={805} />
                                     </h3>
                                 </div>
                             </div>

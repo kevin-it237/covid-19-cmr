@@ -12,14 +12,20 @@ class About extends React.Component {
                         <div className="col-sm-12">
                             <h1 className="text-bold">A Propos</h1>
                             <div className="mt-4">
-                                <p>Covid-19 Cameroon est géré par une équipe de jeunes développeurs informatiques dans le but de rendre les statistiques du COVID-19 disponibles 
-                                    dans un format stimulant et pertinent pour un large public à travers le cameroun et le monde.</p>
+                                <p>COVID-19 CMR est une plateforme web de suivi et de renseignement quotidien des
+                                    données et d'informations chiffrées traduisant l'évolution de la pandémie du coronavirus
+                                    dans les régions du cameroun ... Son intervention en cette période critique pour de nombreux
+                                    pays et le nôtre en particulier n’est pas sans intérêt, il témoigne de la volonté des jeunes
+                                    startupers d'Inchtech's l'ayant mise sur pied, d'accompagner le gouvernement dans la lutte
+                                    contre la propagation de cette épidémie ...</p>
                             </div>
+
                             <div className="mt-5">
                                 <h2 className="text-bold">Comment ça fonctionne ?</h2>
-                                <p>Pour ces données COVID-19, nous les collectons à partir de rapports officiels, 
-                                    directement à partir des canaux de communication du gouvernement ou indirectement, 
-                                    via des sources médiatiques locales lorsque cela est jugé fiable. Des mises à jour en temps opportun sont rendues possibles 
+                                <p>Axé sur des principes de datas analytics, ce mécanisme de fonctionnement lui permet de
+                                    traiter et de gérer les données collectées au près des sources d’informations officielles
+                                    reconnues par l’ETAT (Ministère de la Santé & OMS).
+                                    Des mises à jour en temps opportun sont rendues possibles
                                     grâce à la participation de notre équipe dynamique.</p>
                             </div>
                             <div className="mt-5">
