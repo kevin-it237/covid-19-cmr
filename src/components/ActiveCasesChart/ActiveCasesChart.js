@@ -35,7 +35,7 @@ class ActiveCase extends React.Component {
                 "Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25",
                 "Mar 26","Mar 27","Mar 28","Mar 29","Mar 30","Mar 31","Apr 01","Apr 02","Apr 03","Apr 04","Apr 05","Apr 06","Apr 07",
                 "Apr 08","Apr 09","Apr 10","Apr 11","Apr 12","Apr 13","Apr 14","Apr 15","Apr 16","Apr 17","Apr 18","Apr 19","Apr 20",
-                    "Apr 21","Apr 22","Apr 23","Apr 24","Apr 25","Apr 26","Apr 27","Apr 28","Apr 29"]
+                    "Apr 21","Apr 22","Apr 23","Apr 24","Apr 25","Apr 26","Apr 27","Apr 28","Apr 29","Apr 30","May 1"]
             },
             yAxis: {
                 title: {
@@ -45,7 +45,7 @@ class ActiveCase extends React.Component {
             series: [{
                 name: 'Cas',
                 data: [0,0,0,0,2,2,2,2,2,2,2,2,3,4,5,10,13,13,25,38,38,54,63,72,72,87,87,128,128,182,217,289,484,
-                    529,624,632,616,660,681,730,710,710,720,720,704,666,810,818,670,670,724,724,724,623,668,768,779,842,832,837],
+                    529,624,632,616,660,681,730,710,710,720,720,704,666,810,818,670,670,724,724,724,623,668,768,779,842,832,837,837,1074,1060],
                 zoneAxis: 'x',
                 color: '#00DDDD',
                 lineWidth: 5,
