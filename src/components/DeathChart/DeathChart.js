@@ -35,7 +35,7 @@ class DeathChart extends React.Component {
                 "Mar 25","Mar 26","Mar 27","Mar 28","Mar 29","Mar 30","Mar 31","Apr 01","Apr 02","Apr 03","Apr 04","Apr 05","Apr 06",
                 "Apr 07","Apr 08","Apr 09","Apr 10","Apr 11","Apr 12","Apr 13","Apr 14","Apr 15","Apr 16","Apr 17","Apr 18","Apr 19","Apr 20","Apr 21",
                     "Apr 22","Apr 23","Apr 24","Apr 25","Apr 26","Apr 27","Apr 28","Apr 29","Apr 30","May 1","May 2","May 3","May 4","May 5","May 6","May 7","May 8","May 9",
-                    "May 11","May 12","may 13"]
+                    "May 11","May 12","may 13","May 16","May 17"]
             },
             yAxis: {
                 title: {
@@ -47,7 +47,7 @@ class DeathChart extends React.Component {
             },
             series: [{
                 data: [0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,6,6,6,6,7,8,9,9,9,9,10,12,12,12,14,14,14,17,22,22,42,42,42,42,43,43,43,53,56,58,59,61,61,
-                    64,64,64,64,64,108,108,109,114,125,136,139],
+                    64,64,64,64,64,108,108,109,114,125,136,139,140,140],
                 zoneAxis: 'x',
                 lineWidth: 5,
                 name: 'Décès',

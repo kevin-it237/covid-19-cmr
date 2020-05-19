@@ -10,15 +10,15 @@ export default class CameroonMap extends React.Component {
 
     componentDidMount() {
         const data = `var data =[
-            ['cm-es', 19],
+            ['cm-es', 52],
             ['cm-ad', 5],
-            ['cm-nw', 11],
+            ['cm-nw', 17],
             ['cm-no', 14],
-            ['cm-ce', 1525],
+            ['cm-ce', 1605],
             ['cm-ou', 133],
             ['cm-en', 5],
-            ['cm-sw', 33],
-            ['cm-lt', 932],
+            ['cm-sw', 37],
+            ['cm-lt', 960],
             ['cm-su', 12]
         ];
         
