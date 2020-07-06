@@ -28,7 +28,7 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Cas Total</h2>
                                     <h3 className="display-3 one">
-                                        <CountUp end={6143} />
+                                        <CountUp end={13711} />
                                     </h3>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Nouveaux Cas</h2>
                                     <h3 className="display-3 four">
-                                        <CountUp end={239} />
+                                        <CountUp end={1119} />
                                     </h3>
                                     <p className="text-muted">Mise à jour le <strong>1 Juin 2020</strong></p>
                                     <p className="text-muted">Sources: <strong>MINSANTE & OMS</strong></p>
@@ -47,7 +47,7 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Décès</h2>
                                     <h3 className="display-3 two">
-                                        <CountUp end={197} />
+                                        <CountUp end={328} />
                                     </h3>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@ class Home extends React.Component {
                                 <div className="stat">
                                     <h2 className="display-3">Guéris</h2>
                                     <h3 className="display-3 tree">
-                                        <CountUp end={3578} />
+                                        <CountUp end={11114} />
                                     </h3>
                                 </div>
                             </div>
