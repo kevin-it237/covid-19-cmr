@@ -12,6 +12,7 @@ const Home = lazy(() => import('./layouts/Home/Home'))
 const Admin = lazy(() => import('./layouts/Admin/Admin'))
 const Recommandations = lazy(() => import('./layouts/Recommandations/Recommandations'))
 const Conseils = lazy(() => import('./layouts/Conseils/Conseils'))
+const Centers = lazy(() => import('./layouts/Centers/Centers'))
 const About = lazy(() => import('./layouts/About/About'))
 const Header = lazy(() => import('./components/Header/Header'))
 
@@ -38,6 +39,9 @@ function App() {
             </Route>
             <Route exact path="/conseils">
               <Conseils />
+            </Route>
+            <Route exact path="/centres">
+              <Centers />
             </Route>
             <Route exact path="/about">
               <About />
